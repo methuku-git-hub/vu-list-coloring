@@ -1,0 +1,39 @@
+{
+  "roots": [
+    "Vu.main_result",
+    "Vu.main_result_real"
+  ],
+  "export_sha256": "f3a856983a47bc90995478463625a981fe3a05074df040f6fd06d0caf2a4883e",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "number_of_project_theorems": 272,
+  "required_revised_lemmas_present": [
+    "Vu.Revised.Classes.coefficient_cut",
+    "Vu.Revised.Classes.common_witness",
+    "Vu.Revised.Classes.regular_cut",
+    "Vu.Revised.Classes.tests_and_omissions",
+    "Vu.Revised.coloring_round",
+    "Vu.Revised.energy_regular_refinement",
+    "Vu.Revised.extracting_dense_pieces",
+    "Vu.Revised.finish_state",
+    "Vu.Revised.graph_structure",
+    "Vu.Revised.omit_columns",
+    "Vu.Revised.pack_neighbor_groups",
+    "Vu.Revised.rooted_component_count",
+    "Vu.Revised.sum_lower_tail",
+    "Vu.Revised.two_moments",
+    "Vu.Revised.uniform_of_structure",
+    "Vu.Revised.union_lower_tail_of_bound",
+    "Vu.Revised.witness_energy"
+  ],
+  "historical_alternative_lemmas_absent": [
+    "Vu.Revised.graph_decomposition",
+    "Vu.coloring_round",
+    "Vu.graph_decomposition",
+    "Vu.pack_neighbor_groups",
+    "Vu.regular_refinement_vertices"
+  ]
+}

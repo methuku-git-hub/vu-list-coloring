@@ -1,0 +1,31 @@
+{
+  "source_sha256": "bf776382197477300390ba607cd9d98778879f8a20904aa15c85e61825617f86",
+  "canonical_name": "PalomarCanonicalb267cee2dbd81de30de0b898.Challenge",
+  "verifier_revision": "046554302064b2c83c2b924bea6db87fc5900c68",
+  "challenge_exports_sha256": "72a6059c41da1179c89739c3e18959451f7a29384960765fd94374728a1337a3",
+  "solution_exports_sha256": "b9f38ce100ece64cfe45446fe410e687eda3579a8286d9857e83137864395aa9",
+  "canonical_module_artifacts_sha256": {
+    "Challenge.olean": "40a57c5227b4c6021e9fecde66d186e8db4f6f6e640ec5162758d55994da90c8",
+    "Challenge.olean.private": "c3022f3b83336f73d4592c1601d21c34ad0ae2f9ed3f8827da57a71af7560a5f",
+    "Challenge.olean.server": "846fddd6481e7a6e150825baec2a2cced781331973bf8f2a1ab2bb70cb609e9c",
+    "Challenge.ir": "f3d0cc9af648660c8270ab08ff1804c1c3d65c08f1741901f5f58d0efade906d"
+  },
+  "config_sha256": "90a7fad98c7263f01b52f4f2b214bc45724da5d4140dcac05d0eb339c699d7bb",
+  "lean_compilation_trust_level": 0,
+  "external_packages_and_toolchain_only": true,
+  "theorems": [
+    "Vu.main_result",
+    "Vu.main_result_real"
+  ],
+  "verdict": [
+    "Running con-ron kernel on solution",
+    "con-ron: 1 inductive blocks modelled in-process: Lean.Syntax (30 generated records, checked by the fold as declarations and not counted as records of the file)",
+    "con-ron: accepted 21881 declarations (--verified)",
+    "con-ron kernel accepts the solution",
+    "Running nanoda kernel on solution",
+    "nanoda kernel accepts the solution",
+    "Running Lean default kernel on solution",
+    "Lean default kernel accepts the solution",
+    "Your solution is okay!"
+  ]
+}

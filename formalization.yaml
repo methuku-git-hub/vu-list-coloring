@@ -1,0 +1,69 @@
+version: v0.4
+project:
+  name: A proof of Vu’s conjecture
+  description: For every fixed ζ, ε > 0, a finite simple graph of sufficiently large degree bound Δ and maximum pair codegree at most ζΔ has list chromatic number at most (ζ + ε)Δ. The degree threshold is uniform in the number of vertices and in the lists.
+  authors: [Abhishek Methuku]
+  responsible_maintainers: [Abhishek Methuku]
+  license: Apache-2.0
+classification:
+  arxiv: [math.CO]
+  msc2020: [05C15]
+sources:
+  - title: A proof of Vu's conjecture
+    authors: [Abhishek Methuku]
+    type: paper
+    location: Theorem 1.1, with the proof in Sections 3 through 7
+    id: "urn:sha256:da3e9ecaa6fea8f9d7ba3cd64dd68cfc49e72e39ccc6b1f9eed7373a9633d968"
+    relationship: formalizes
+    author_endorsement: participated
+    note: The author supplied this unpublished revision and directed the formalization. The paper is identified by its file digest. The code license applies to the repository.
+  - title: A General Upper Bound on the List Chromatic Number of Locally Sparse Graphs
+    authors: [Van H. Vu]
+    type: paper
+    id: https://doi.org/10.1017/S0963548301004898
+    location: Section 3, Open Question 1
+    relationship: background
+  - title: 'A special case of Vu’s conjecture: colouring nearly disjoint graphs of bounded maximum degree'
+    authors: [Tom Kelly, Daniela Kühn, Deryk Osthus]
+    type: paper
+    id: https://arxiv.org/abs/2109.11438
+    relationship: background
+related_formalizations: []
+status:
+  scope: Unconditional proof of Theorem 1.1 for finite simple graphs, including integer and real degree bounds, using the revised structural decomposition and coloring procedure.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: [propext, Classical.choice, Quot.sound]
+  main_results:
+    - declaration: Vu.main_result_real
+      file: Solution.lean
+      sorry_count: 0
+      axioms: [propext, Classical.choice, Quot.sound]
+      comparator_config: comparator.json
+      literature_dependencies: []
+    - declaration: Vu.main_result
+      file: Solution.lean
+      sorry_count: 0
+      axioms: [propext, Classical.choice, Quot.sound]
+      comparator_config: comparator.json
+      literature_dependencies: []
+automation:
+  methods:
+    - method: agent
+      models: [Codex]
+      framework: ChatGPT Work Mode
+      tool_setup: Codex implemented and tested Lean proofs using the pinned Lean and Mathlib versions. Comparator checked both declarations against the independent Challenge.
+  notes: Abhishek Methuku provided the mathematical proof and directed the formalization. Codex wrote and checked the Lean development.
+fidelity:
+  divergences: The conclusion is expressed as proper colorability from arbitrary finite vertex lists of size at least the floor of the bound. The palette type is arbitrary. The regular refinement follows the energy increment proof, including diagonal pairs. The groups of neighbors are packed in a fixed order. Rooted components are counted as subsets of the neighborhood of radius r−1.
+review:
+  status: agent-reviewed
+  reviewers: []
+  notes: Local Lean builds, transitive axiom audits and full Comparator checks with Lean, NanoDa and Con-Ron passed. Human review and hosted Palomar review are pending.
+alignment:
+  namespace: Vu
+  statements:
+    - {source: Theorem 1.1, lean: Vu.main_result_real, module: Solution, status: proved}
+    - {source: Theorem 1.1 with integral degree bound, lean: Vu.main_result, module: Solution, status: proved}
+    - {source: Graph decomposition in Section 5, lean: Vu.Revised.graph_structure, module: Vu.RevisedStructure, status: proved}
+    - {source: One coloring round in Section 7, lean: Vu.Revised.coloring_round, module: Vu.RevisedRound, status: proved}

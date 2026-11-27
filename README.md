@@ -54,6 +54,8 @@ The cache command is optional. It downloads available Mathlib build artifacts.
 
 ## Verification
 
+Palomar registered this formalization on 27 November 2026 as [PALOMAR-2026-11-27-000050, version 1](https://palomar-registry.org/entry?id=PALOMAR-2026-11-27-000050&version=1).
+
 The two proofs depend only on `propext`, `Classical.choice`, and `Quot.sound`. The [local Comparator transcript](evidence/comparator.log) records acceptance by Lean’s kernel, NanoDa, and Con-Ron. The [axiom audit](evidence/axioms.txt) and [proof dependencies](evidence/proof-route.json) record the checks for the two declarations. The [Comparator configuration](comparator.json) specifies the statements and permitted axioms.
 
 ## Sources and attribution
